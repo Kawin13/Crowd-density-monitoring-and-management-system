@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "description": "Secret key used to sign and verify JWT access/refresh tokens."
+    },
+    {
+      "name": "app.jwt.expiration",
+      "type": "java.lang.Long",
+      "description": "JWT access token expiration time, in milliseconds."
+    },
+    {
+      "name": "app.jwt.refresh-expiration",
+      "type": "java.lang.Long",
+      "description": "JWT refresh token expiration time, in milliseconds."
+    },
+    {
+      "name": "app.cors.allowed-origins",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of origins allowed to call the API (CORS)."
+    },
+    {
+      "name": "app.ai.service.url",
+      "type": "java.lang.String",
+      "description": "Base URL of the Python AI microservice used for crowd analysis."
+    },
+    {
+      "name": "app.email.from",
+      "type": "java.lang.String",
+      "description": "The \"from\" address used when the backend sends transactional emails."
+    },
+    {
+      "name": "app.frontend.url",
+      "type": "java.lang.String",
+      "description": "Base URL of the deployed frontend, used to build links in outgoing emails."
+    },
+    {
+      "name": "app.file.upload-dir",
+      "type": "java.lang.String",
+      "description": "Local directory where uploaded camera frames/videos are stored."
+    },
+    {
+      "name": "app.file.report-dir",
+      "type": "java.lang.String",
+      "description": "Local directory where generated PDF/Excel reports are stored."
+    }
+  ]
+}

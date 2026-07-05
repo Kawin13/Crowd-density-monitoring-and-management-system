@@ -1,0 +1,27 @@
+# Build output
+backend/target/
+frontend/dist/
+frontend/node_modules/
+
+# Python
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/**/__pycache__/
+ai-service/*.pt
+
+# Local env files (keep secrets out of git; commit .env.example instead)
+.env
+**/.env
+
+# Uploaded/generated files at runtime
+backend/uploads/
+backend/reports/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Logs
+*.log
