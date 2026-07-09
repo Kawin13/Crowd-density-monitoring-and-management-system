@@ -1,0 +1,31 @@
+# Core web framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# Computer vision — use headless build to avoid GUI dependencies on Windows Server
+# If you need RTSP streams via FFmpeg, switch to opencv-python instead of -headless
+opencv-python>=4.9.0.80
+
+# AI / YOLO
+ultralytics>=8.2.0
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Numeric
+numpy>=1.26.4
+
+# Image processing
+Pillow>=10.2.0
+
+# HTTP client (async)
+httpx>=0.26.0
+
+# HTTP client (sync, used by ultralytics internals)
+requests>=2.31.0
+
+# Async file I/O
+aiofiles>=23.2.1
+
+# Environment variables
+python-dotenv>=1.0.0

@@ -1,0 +1,131 @@
+### ============================================================
+### Java / Spring Boot (backend)
+### ============================================================
+backend/target/
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Maven
+.mvn/
+!**/.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Spring Boot
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-*.local.properties
+*.log
+
+### ============================================================
+### Node / React / Vite (frontend)
+### ============================================================
+frontend/node_modules/
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+*.local
+
+# npm/yarn/pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite cache
+frontend/.vite/
+.vite/
+
+### ============================================================
+### Python / FastAPI (ai-service)
+### ============================================================
+ai-service/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+ai-service/venv/
+ai-service/.venv/
+venv/
+.venv/
+env/
+ENV/
+ai-service/*.egg-info/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Model weights / large downloaded artifacts (regenerate/download separately)
+ai-service/*.pt
+ai-service/*.pth
+ai-service/*.onnx
+ai-service/weights/
+ai-service/models/*.bin
+
+### ============================================================
+### Environment variables & secrets
+### ============================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+!backend/src/main/resources/**/*.key.example
+
+### ============================================================
+### Database
+### ============================================================
+*.sql.bak
+database/*.dump
+pgdata/
+mysql-data/
+
+### ============================================================
+### Docker
+### ============================================================
+docker-compose.override.yml
+
+### ============================================================
+### IDE / Editor
+### ============================================================
+.idea/
+*.iml
+*.iws
+.vscode/
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.factorypath
+
+### ============================================================
+### OS files
+### ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### ============================================================
+### Misc build/output
+### ============================================================
+*.tsbuildinfo
+coverage/
+.nyc_output/
+dist/
+build/
+out/
